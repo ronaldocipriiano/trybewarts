@@ -1,4 +1,5 @@
 const buttonEntrar = document.getElementById("button-entrar");
+document.getElementById("submit-btn").disabled = true;
 
 
 const verificarButtonEntrar = () => {
@@ -13,6 +14,18 @@ const verificarButtonEntrar = () => {
     })
 };
 
+const validarCheckbox = () => {
+    let checkbox = document.getElementById('agreement');
+        checkbox.addEventListener("click", () => {
+          if (checkbox.checked) {
+            document.getElementById("submit-btn").disabled = false;
+          } else {
+            document.getElementById("submit-btn").disabled = true;
+          }
+      });
+};
 
+
+validarCheckbox();
 verificarButtonEntrar();
 
