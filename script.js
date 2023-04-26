@@ -1,5 +1,5 @@
 const buttonEntrar = document.getElementById('button-entrar');
-let desativaEnviar = document.getElementById('submit-btn')
+const desativaEnviar = document.getElementById('submit-btn');
 
 const verificarButtonEntrar = () => {
   const email = document.getElementById('email');
