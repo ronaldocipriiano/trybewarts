@@ -1,5 +1,4 @@
-const buttonEntrar = document.getElementById("button-entrar");
-document.getElementById("submit-btn").disabled = true;
+const buttonEntrar = document.getElementById('button-entrar');
 
 const verificarButtonEntrar = () => {
     const email = document.getElementById('email');
@@ -7,19 +6,19 @@ const verificarButtonEntrar = () => {
   buttonEntrar.addEventListener('click', () => {
   if (email.value === 'tryber@teste.com' && password.value === '123456'){
     alert ('Olá, Tryber!');
-      } else if (email.value !== 'tryber@teste.com' && password.value !== '123456'){
+      } else if (email.value !== 'tryber@teste.com' && password.value !== '123456') {
     alert ('Email ou senha inválidos.');
       }
     })
-};
+  };
 
 const validarCheckbox = () => {
-    let checkbox = document.getElementById('agreement');
-        checkbox.addEventListener("click", () => {
-          if (checkbox.checked) {
-            document.getElementById("submit-btn").disabled = false;
+    const checkbox = document.getElementById('agreement');
+  checkbox.addEventListener('click', () => {
+  if (checkbox.checked) {
+            document.getElementById('submit-btn').disabled = false;
           } else {
-            document.getElementById("submit-btn").disabled = true;
+            document.getElementById('submit-btn').disabled = true;
           }
       });
 };
