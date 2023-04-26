@@ -62,4 +62,8 @@
     display: flex;
 }
 
-
+.area {
+    display: flex;
+    width: auto;
+    height: 200px;
+}
