@@ -7,7 +7,7 @@ const verificarButtonEntrar = () => {
     buttonEntrar.addEventListener("click", () => {
         if(email.value === "tryber@teste.com" && password.value === "123456"){
             alert("Olá, Tryber!");
-        } else {
+        } else if(email.value !== "tryber@teste.com" && password.value !== "123456"){
             alert("Email ou senha inválidos");
         }
     })

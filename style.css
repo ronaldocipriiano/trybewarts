@@ -25,3 +25,23 @@
 #trybewarts-forms-logo {
     height: 500px;
 }
+
+.name {
+    display: flex;
+}
+
+.email-house {
+    display: flex;
+}
+
+#label-family{
+    display: flex;
+}
+
+#radio-buttons {
+    display: flex;
+}
+
+#label-content {
+    display: flex;
+}
