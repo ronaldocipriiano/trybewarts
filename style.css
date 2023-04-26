@@ -1,69 +1,69 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login {
-    display: flex;
+  display: flex;
 }
 
 .main {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #evaluation-form {
-    display: flex;
-    width: 675px;
-    flex-direction: column;
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
 
 #trybewarts-forms-logo {
-    height: 500px;
+  height: 500px;
 }
 
 .name {
-    display: flex;
+  display: flex;
 }
 
 .email-house {
-    display: flex;
+  display: flex;
 }
 
 .checkbox-agreement {
-    display: flex;
+  display: flex;
 }
 
 .footer {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    justify-content: center;
-    padding: 20px;
-    font-size: 1.4rem;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.4rem;
 }
 
-#label-family{
-    display: flex;
+#label-family {
+  display: flex;
 }
 
 #radio-buttons {
-    display: flex;
+  display: flex;
 }
 
 #label-content {
-    display: flex;
+  display: flex;
 }
 
 .area {
-    display: flex;
-    width: auto;
-    height: 200px;
+  display: flex;
+  width: auto;
+  height: 200px;
 }
