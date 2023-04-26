@@ -47,3 +47,15 @@
     padding: 20px;
     font-size: 1.4rem;
 }
+
+#label-family{
+    display: flex;
+}
+
+#radio-buttons {
+    display: flex;
+}
+
+#label-content {
+    display: flex;
+}
