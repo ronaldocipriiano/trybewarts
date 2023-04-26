@@ -1,4 +1,5 @@
 const buttonEntrar = document.getElementById('button-entrar');
+const desativaEnviar = document.getElementById('submit-btn').disabled = true;
 
 const verificarButtonEntrar = () => {
   const email = document.getElementById('email');
