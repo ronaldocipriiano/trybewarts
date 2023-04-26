@@ -1,4 +1,5 @@
 const buttonEntrar = document.getElementById('button-entrar');
+let desativaEnviar = document.getElementById('submit-btn')
 
 const verificarButtonEntrar = () => {
   const email = document.getElementById('email');
@@ -13,7 +14,6 @@ const verificarButtonEntrar = () => {
 };
 
 const desativarEnviar = () => {
-  const desativaEnviar = document.getElementById('submit-btn');
   desativaEnviar.disabled = true;
 };
 
@@ -21,9 +21,9 @@ const validarCheckbox = () => {
   const checkbox = document.getElementById('agreement');
   checkbox.addEventListener('click', () => {
     if (checkbox.checked) {
-      document.getElementById('submit-btn').disabled = false;
+      desativaEnviar.disabled = false;
     } else {
-      document.getElementById('submit-btn').disabled = true;
+      desativaEnviar.disabled = true;
     }
   });
 };
