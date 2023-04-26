@@ -1,7 +1,5 @@
 const buttonEntrar = document.getElementById('button-entrar');
 
-const desativaEnviar = document.getElementById('submit-btn').disabled = true;
-
 const verificarButtonEntrar = () => {
   const email = document.getElementById('email');
   const password = document.getElementById('password');
@@ -15,9 +13,9 @@ const verificarButtonEntrar = () => {
 };
 
 const desativarEnviar = () => {
-    const desativaEnviar = document.getElementById('submit-btn');
-    desativaEnviar.disabled = true
-  }
+  const desativaEnviar = document.getElementById('submit-btn');
+  desativaEnviar.disabled = true;
+};
 
 const validarCheckbox = () => {
   const checkbox = document.getElementById('agreement');
