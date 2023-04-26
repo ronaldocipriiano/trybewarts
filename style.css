@@ -6,6 +6,8 @@
 .header {
     display: flex;
     background-color: rgb(50, 167, 145);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .trybewarts-login {
@@ -32,4 +34,16 @@
 
 .email-house {
     display: flex;
+}
+
+.checkbox-agreement {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(50, 167, 145);
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.4rem;
 }
