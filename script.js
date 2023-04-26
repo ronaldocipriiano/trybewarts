@@ -12,3 +12,5 @@ const verificarButtonEntrar = () => {
 };
 
 onclick(verificarButtonEntrar);
+
+console.log(verificarButtonEntrar);
