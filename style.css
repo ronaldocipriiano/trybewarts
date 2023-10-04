@@ -54,8 +54,10 @@
   display: flex;
 }
 
-#radio-buttons {
-  display: flex;
+#radio-frontend,
+#radio-backend,
+#radio-fullstack {
+  display: block;
 }
 
 #label-content {
@@ -66,4 +68,22 @@
   display: flex;
   width: auto;
   height: 200px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
 }
