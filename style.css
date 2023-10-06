@@ -1,77 +1,214 @@
+/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Estilos para o header */
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  background-color: #32a791;
+  padding: 10px 20px;
+  color: white;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+}
+
+#trybewarts-header-title {
+  font-size: 40px;
+  margin-left: 20px;
 }
 
 .trybewarts-login {
   display: flex;
+  gap: 10px;
 }
 
+.trybewarts-login input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#button-entrar {
+  background-color: #3432a7;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para o formulário principal */
 .main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 150px 0;
 }
 
 #evaluation-form {
   display: flex;
-  width: 675px;
   flex-direction: column;
-}
-
-#trybewarts-forms-logo {
-  height: 500px;
-}
-
-.name {
-  display: flex;
-}
-
-.email-house {
-  display: flex;
-}
-
-.checkbox-agreement {
-  display: flex;
-}
-
-.footer {
-  display: flex;
-  background-color: rgb(50, 167, 145);
-  justify-content: center;
+  width: 675px;
   padding: 20px;
-  font-size: 1.4rem;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-#label-family {
+#title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-row {
   display: flex;
+  justify-content: space-between;
+  width: 675px;
+  margin: 0 auto;
+  align-items: flex-start;
 }
 
-#radio-frontend {
+.input-group,
+.radio-group,
+.checkbox-group {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.input-group input,
+#house,
+.subject,
+.radio-group input[type="radio"],
+.checkbox-group .subject {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio-group label,
+.checkbox-group label,
+.checkbox-group .checkbox-pair {
   display: block;
 }
 
-#radio-backend {
-  display: block;
-}
-
+#radio-frontend,
+#radio-backend,
 #radio-fullstack {
   display: block;
 }
 
-#label-content {
-  display: flex;
+.checkbox-group .checkbox-pair {
+  display: inline-block;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox-group .subject {
+  margin-right: 10px;
+}
+
+.checkbox-group label {
+  margin-bottom: 10px;
+}
+
+#label-family {
+  margin-right: 10px;
+}
+
+.textarea {
+  margin-bottom: 10px;
 }
 
 .area {
-  display: flex;
-  width: auto;
-  height: 200px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+#counter {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.checkbox-agreement input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#submit-btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3432a7;
+  color: white;
+  cursor: not-allowed;
+}
+
+#trybewarts-forms-logo {
+  width: 800px;
+  height: 500px;
+}
+
+/* Estilos para o rodapé */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #32a791;
+  padding: 10px;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .trybewarts-header-logo {
+    width: 80px;
+  }
+  #trybewarts-header-title {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  .trybewarts-login {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trybewarts-login input {
+    width: 100%;
+  }
+  #button-entrar {
+    width: 100%;
+  }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  #evaluation-form {
+    width: 100%;
+    padding: 10px;
+  }
+  .input-group input,
+  #house,
+  .subject,
+  .radio-group input[type="radio"],
+  .checkbox-group .subject {
+    width: 100%;
+  }
 }

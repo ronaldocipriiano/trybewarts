@@ -10,8 +10,10 @@ const verificarButtonEntrar = () => {
   const password = document.getElementById('password');
   buttonEntrar.addEventListener('click', () => {
     if (email.value === 'tryber@teste.com' && password.value === '123456') {
+      console.log('Login com sucesso');
       alert('Olá, Tryber!');
-    } else if (email.value !== 'tryber@teste.com' && password.value !== '123456') {
+    } else {
+      console.log('Login falhou');
       alert('Email ou senha inválidos.');
     }
   });
@@ -23,7 +25,7 @@ const desativarEnviar = () => {
 
 const validarCheckbox = () => {
   const checkbox = document.getElementById('agreement');
-  checkbox.addEventListener('click', () => {
+  checkbox.addEventListener('change', () => {
     if (checkbox.checked) {
       desativaEnviar.disabled = false;
     } else {
@@ -60,6 +62,7 @@ const handleSubmit = () => {
 };
 
 form.addEventListener('submit', (e) => {
+  console.log('Formulário enviado'); // Adicione este console.log
   handleSubmit();
   e.preventDefault();
   formData.style.display = 'block';
