@@ -1,4 +1,3 @@
-/* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
@@ -92,6 +91,7 @@
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-left: 5px;
 }
 
 .radio-group label,
@@ -155,20 +155,31 @@
   cursor: not-allowed;
 }
 
+#reset-btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #a73232;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
 #trybewarts-forms-logo {
-  width: 800px;
-  height: 500px;
+  width: 600px;
+  height: 400px;
 }
 
 /* Estilos para o rodapé */
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #32a791;
   padding: 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: white;
   text-align: center;
   width: 100%;

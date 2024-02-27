@@ -47,3 +47,6 @@ Este projeto foi desenvolvido como parte de um projeto da Trybe e não está abe
 
 - Trybe: Por proporcionar a oportunidade de desenvolver este projeto.
 - Gabriel Barreto: Pelo trabalho conjunto na criação desta aplicação.
+
+## Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.

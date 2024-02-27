@@ -62,7 +62,7 @@ const handleSubmit = () => {
 };
 
 form.addEventListener('submit', (e) => {
-  console.log('Formulário enviado'); // Adicione este console.log
+  console.log('Formulário enviado');
   handleSubmit();
   e.preventDefault();
   formData.style.display = 'block';
